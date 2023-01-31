@@ -6,28 +6,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<style lang="postcss">
-
-		 :global(h1) {
-			@apply text-3xl font-semibold w-full mb-4;
-	/* font-bold text-4xl */
-		}
-	</style>
-	<BaseLayout>
-		<h1>TEST</h1>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</BaseLayout>
-</html>
+<BaseLayout>
+	<h1>TEST</h1>
+	<div class="grid place-items-center h-screen content-center">
+		<Button>Tailwind Button in Astro!</Button>
+		<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+	</div>
+</BaseLayout>
