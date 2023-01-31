@@ -2,9 +2,8 @@
 import Button from "../../components/Button.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-/*
+/* this line cause H1 in BaseLayout ignore style*/
 const allPosts = await Astro.glob("../posts/*.md");
-*/
 ---
 
 <BaseLayout>
